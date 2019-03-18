@@ -42,41 +42,41 @@ section {
 /* scale */
 
 .oppgave-4 {
-  transform: scaleX();
+  transform: scaleX(2);
 }
 
 .oppgave-5 {
-  transform: ;
+  transform: scaleY(0.5);
 }
 
 .oppgave-6 {
-  transform: ;
+  transform: scale(3);
 }
 
 .oppgave-7 {
-  transform: ;
+  transform: scale(0.2, 2);
 }
 
 /* skew */
 
 .oppgave-8 {
-  transform: skewX();
+  transform: skewX(30deg);
 }
 
 .oppgave-9 {
-  transform: ;
+  transform: skewY(30deg);
 }
 
 .oppgave-10 {
-  transform: ;
+  transform: skew(5deg, 5deg);
 }
 
 /* rotate */
 
 .oppgave-11 {
-  transform: rotate();
+  transform: rotate(20deg);
 }
 
 .oppgave-12 {
-  transform: ;
+  transform: rotate(0.125turn);
 }
