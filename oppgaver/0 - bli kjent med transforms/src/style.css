@@ -28,7 +28,7 @@ section {
 /* translate: */
 
 .oppgave-1 {
-  transform: translateX();
+  transform: translateX(20px);
 }
 
 .oppgave-2 {
