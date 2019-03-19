@@ -1,0 +1,107 @@
+.container {
+    height: 100px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.loader__bar {
+    display: inline-block;
+    height: 20px;
+    width: 10px;
+    margin: 0 5px;
+    background: teal;
+    animation: highlight 2s;
+    animation-iteration-count: infinite;
+}
+
+.bar-1 {
+    animation-delay: 0s;
+}
+
+.bar-2 {
+    animation-delay: calc(1 * (2s / 6));
+}
+
+.bar-3 {
+    animation-delay: calc(2 * (2s / 6));
+}
+
+.bar-4 {
+    animation-delay: calc(3 * (2s / 6));
+}
+
+.bar-5 {
+    animation-delay: calc(4 * (2s / 6));
+}
+
+.bar-6 {
+    animation-delay: calc(5 * (2s / 6));
+}
+
+@keyframes highlight {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    10% {
+        transform: scaleY(5) scaleX(2);
+        background: red;
+    }
+
+    20% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+.clock {
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.hand {
+    width: 4px;
+    height: 45px;
+    background: black;
+    border-radius: 3px;
+    position: absolute;
+    top: 5px;
+    left: 48px;
+}
+
+.minute-hand {
+    top: 5px;
+    height: 45px;
+    background: teal;
+    animation: minutes 1s linear;
+    animation-iteration-count: infinite;
+    transform-origin: center bottom;
+}
+
+.hour-hand {
+    top: 20px;
+    height: 30px;
+    background: red;
+    animation: minutes 12s linear;
+    animation-iteration-count: infinite;
+    transform-origin: center bottom;
+}
+
+@keyframes minutes {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
