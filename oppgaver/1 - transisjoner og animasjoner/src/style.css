@@ -10,9 +10,35 @@ button {
   padding: 20px;
   border: none;
   border-radius: 10px;
-  transition: 400ms;
+  transition: background 400ms, color 200ms 200ms ease-in;
 }
 
 button:hover {
   background: #008080;
+  color: red;
+}
+
+button.del2-knapp {
+  transition: transform 500ms;
+}
+
+button.del2-knapp:hover {
+  transform: scale(2)
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background: rgb(14, 199, 97);
+  animation: move 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(90vw) rotate(360deg);
+  }
 }
